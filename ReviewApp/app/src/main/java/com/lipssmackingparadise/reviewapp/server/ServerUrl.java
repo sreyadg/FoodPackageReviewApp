@@ -19,6 +19,8 @@ public class ServerUrl {
 
     public String URL_LOGIN = BASE_URL + "login";
 
+    public String URL_LOGIN_AUTHENTICATE = BASE_URL + "login/authenticate";
+
 
     private static ServerUrl instance;
 

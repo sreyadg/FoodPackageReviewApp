@@ -44,5 +44,10 @@
     <string name="title_activity_hersheys_chocolate_review2">HersheysChocolateReview2</string>
     <string name="title_activity_nestle_cereal_review2">NestleCerealReview2</string>
     <string name="title_activity_update_details">UpdateDetails</string>
+    <string name="title_activity_update_personal_details">UpdatePersonalDetails</string>
+    <string name="title_activity_update_username_password">UpdateUsernamePassword</string>
+    <string name="update_personal_details">Update Personal Details!</string>
+    <string name="title_activity_authenticate_user">AuthenticateUser</string>
+    <string name="title_activity_admin_access">AdminAccess</string>
 
 </resources>

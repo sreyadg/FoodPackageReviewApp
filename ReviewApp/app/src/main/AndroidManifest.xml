@@ -91,6 +91,26 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.lipssmackingparadise.reviewapp.viewcontroller.UserDashboard" />
         </activity>
+        <activity
+            android:name=".viewcontroller.UpdatePersonalDetails"
+            android:label="@string/title_activity_update_personal_details" >
+        </activity>
+        <activity
+            android:name=".viewcontroller.UpdateUsernamePassword"
+            android:label="@string/title_activity_update_username_password" >
+        </activity>
+        <activity
+            android:name=".viewcontroller.AuthenticateUser"
+            android:label="@string/title_activity_authenticate_user"
+            android:parentActivityName=".viewcontroller.Login" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.lipssmackingparadise.reviewapp.viewcontroller.Login" />
+        </activity>
+        <activity
+            android:name=".viewcontroller.AdminAccess"
+            android:label="@string/title_activity_admin_access" >
+        </activity>
     </application>
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->

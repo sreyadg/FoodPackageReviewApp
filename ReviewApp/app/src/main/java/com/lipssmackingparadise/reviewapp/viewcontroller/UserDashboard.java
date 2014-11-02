@@ -53,14 +53,6 @@ public class UserDashboard extends Activity implements ServerConnectListener {
     //messages from the server
     private final String MESSAGE_ERROR_UNKNOWN = "Unknown Error!";
 
-    //JSONTAG for json.simple
-    public static final String JSONTAG_USERNAME= "username";
-    public static final String JSONTAG_PASSWORD = "password";
-    public static final String JSONTAG_FIRST_NAME = "first_name";
-    public static final String JSONTAG_LAST_NAME = "last_name";
-    public static final String JSONTAG_EMAIL = "email";
-    public static final String JSONTAG_DOB = "dob";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -156,8 +148,11 @@ public class UserDashboard extends Activity implements ServerConnectListener {
     }
 
     public void update_details (View v) {
-        
         startActivity(new Intent(UserDashboard.this, UpdateDetails.class));
+    }
+
+    public void view_events (View v) {
+        startActivity(new Intent(UserDashboard.this, OngoingActivity.class));
     }
 
     private void setMessageDialogAndShow (String text, boolean cancelable) {
@@ -176,7 +171,6 @@ public class UserDashboard extends Activity implements ServerConnectListener {
 
     @Override
     public void sendCompleted(String result) {
-
 
         try {
             JSONArray jsonArray = new JSONArray(result);

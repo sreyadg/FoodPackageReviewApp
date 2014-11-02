@@ -7,6 +7,7 @@ var bcrypt = require('bcrypt-nodejs');
 router.post('/', function(req, res) {
 
 	var username = req.body.username;
+	var _id = req.body._id;
 
 	// Set our internal DB variable
 	var db = req.db;
@@ -14,10 +15,21 @@ router.post('/', function(req, res) {
 	// Set our collection
 	var collection = db.get('users');
 
-	collection.find( { "username" : username }, {}, function (err, doc) {
+	if (_id == undefined) {
+
+		collection.find( { "username" : username }, {}, function (err, doc) {
 		console.log('Sending data...')
 		res.send(doc);
-	});
+
+	 });
+	}
+
+	else {
+		collection.find( { "_id" : _id }, {}, function (err, doc) {
+		console.log('Sending data...')
+		res.send(doc);
+	 });
+	}	
 });
 
 router.post('/create', function(req, res) {
@@ -62,12 +74,13 @@ router.post('/create', function(req, res) {
 
 router.post('/update', function(req, res) {
   
-  var username = req.body.username;
-  var password = req.body.password;
-  var first_name = req.body.firstname;
-  var last_name = req.body.lastname;
+  var _id = req.body._id;
+  var first_name = req.body.first_name;
+  var last_name = req.body.last_name;
   var dob = req.body.dob;
   var email = req.body.email;
+
+  console.log(req.body);
 
   // Set our internal DB variable
   var db = req.db;
@@ -75,59 +88,41 @@ router.post('/update', function(req, res) {
   // Set our collection
   var collection = db.get('users');
 
-  collection.find( { "username" : username }, {}, function (err, doc) {
+  if (req.body == null || req.body == undefined) {
+
+  	res.send("No changes made!")
+  
+  }
+
+  else {
+
+  	collection.find( { "_id" : _id }, {}, function (err, doc) {
 
   	if (err) {
         res.send("There was a problem modifying the information to the database.");
       }
 
       else { 
-      	
-      	if (doc[0].password == password) {
-      		
-      		collection.update({ "username" : username },
-      			{ $set: { 
-      				"username" : username ,
-					"password" : hash ,
-					"first_name" : location ,
-					"last_name" : start ,
-					"dob" : end ,
-					"email" : hours
+
+      	console.log("entered");
+
+      	collection.update({ "_id" : _id },
+      		{ $set: { 
+      			"first_name" : first_name ,
+      			"last_name" : last_name ,
+      			"dob" : dob ,
+      			"email" : email
 				}
 			});
+      	  res.send('Update successful!')
+        }
+    });
 
-      	}
 
-      	//TODO implement string function correctly
+  }
 
-      	else {
-      		bcrypt.genSalt(10, function(err, salt) {
-      			bcrypt.hash(password, null, null, function(err, hash) {
-      				collection.update({ "username" : username },
-      					{ $set: { 
-      						"username" : username ,
-      						"password" : hash ,
-      						"first_name" : location ,
-      						"last_name" : start ,
-      						"dob" : end ,
-      						"email" : hours }
-      					});
-      			}, function (err, doc) {
-      				
-      				if (err) {
-						res.send("There was a problem modifying the information to the database.");
-					}
-
-					else {          
-						res.send('Updated user details!');
-						}
-					});
-				});
-		      }
-	       }
-	   }); 
+   
 });
-
-
+ 
 
 module.exports = router;

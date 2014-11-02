@@ -54,11 +54,17 @@ public class Login extends Activity implements ServerConnectListener{
     // Dialog
     private AlertDialog message_dialog;
 
-    //SharedPreferences
+    //SharedPreferences Username
     private SharedPreferences userNameLoggedIn;
     public static final String PREFS_PRIVATE = "PREFS_PRIVATE";
     public static final String KEY_PRIVATE = "KEY_PRIVATE";
     private String SharedPreferencesUsername;
+
+    //SharedPreferences Password
+    private SharedPreferences userPassword;
+    public static final String PREFS_PRIVATE_PASSWORD = "PREFS_PRIVATE_PASSWORD";
+    public static final String KEY_PRIVATE_PASSWORD = "KEY_PRIVATE_PASSWORD";
+    private String SharedPreferencesPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,6 +106,13 @@ public class Login extends Activity implements ServerConnectListener{
         privateEdit.putString(Login.KEY_PRIVATE, SharedPreferencesUsername);
         privateEdit.commit();
 
+        login_password = (EditText) findViewById(R.id.password);
+        SharedPreferencesPassword = login_password.getText().toString();
+        userPassword = getSharedPreferences(Login.PREFS_PRIVATE_PASSWORD, Context.MODE_PRIVATE);
+        Editor privateEditPassword = userPassword.edit();
+        privateEditPassword.putString(Login.KEY_PRIVATE_PASSWORD, SharedPreferencesPassword);
+        privateEditPassword.commit();
+
     }
 
     @Override
@@ -108,7 +121,7 @@ public class Login extends Activity implements ServerConnectListener{
 
         if (serverResult.equals("Success")){
             intialiseSharedPreferences();
-            startActivity(new Intent(Login.this, UserDashboard.class));
+            startActivity(new Intent(Login.this, AuthenticateUser.class));
         }
 
         else if (serverResult.equals("Wrong")){
