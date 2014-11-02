@@ -29,7 +29,7 @@ router.post('/', function(req, res) {
   				message = "Success!"
   				res.send(message);
   			}
-  			
+
   			else {
   				message = "Incorrect username/password!"
   				res.send(message);
@@ -47,9 +47,6 @@ router.post('/authenticate', function(req, res) {
   
   var username = req.body.username;
   var password = req.body.password;
-
-  console.log(password);
-  console.log(username);
 
   // Set our internal DB variable
   var db = req.db;
