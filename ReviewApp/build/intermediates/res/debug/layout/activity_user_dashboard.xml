@@ -62,23 +62,31 @@
         android:layout_height="wrap_content"
         android:text="Change Details"
         android:id="@+id/change_details"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="26dp"
-        android:layout_marginBottom="76dp"
         android:clickable="true"
-        android:onClick="update_details"/>
+        android:onClick="update_details"
+        android:layout_below="@+id/userEmail"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="65dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Events"
         android:id="@+id/view_events"
-        android:layout_alignBottom="@+id/change_details"
         android:layout_toEndOf="@+id/change_details"
-        android:layout_marginLeft="44dp"
         android:clickable="true"
-        android:onClick="view_events"/>
+        android:onClick="view_events"
+        android:layout_alignTop="@+id/change_details"
+        android:layout_toStartOf="@+id/journal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Journal"
+        android:id="@+id/journal"
+        android:layout_alignBottom="@+id/view_events"
+        android:onClick="view_journal"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
-<!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/src/main/res/layout/activity_user_dashboard.xml -->
+<!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/src/main/res/layout/activity_user_dashboard.xml -->

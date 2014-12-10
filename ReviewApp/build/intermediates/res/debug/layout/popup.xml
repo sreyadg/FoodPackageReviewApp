@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1">
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Share on" />
+
+            <ImageButton
+                android:layout_marginTop="15dp"
+                android:layout_width="67dp"
+                android:layout_height="64dp"
+                android:src="@drawable/googleplus"
+                android:onClick="redirect"/>
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="67dp"
+            android:layout_height="64dp"
+            android:id="@+id/twitter"
+            android:src="@drawable/twitter"
+            android:layout_marginLeft="15dp"
+            android:onClick="redirect"/>
+
+        <ImageButton
+            android:layout_width="67dp"
+            android:layout_height="64dp"
+            android:id="@+id/facebook"
+            android:src="@drawable/fblogo"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:onClick="redirectFacebook"
+            />
+
+
+
+    </LinearLayout>
+</LinearLayout><!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/src/main/res/layout/popup.xml -->

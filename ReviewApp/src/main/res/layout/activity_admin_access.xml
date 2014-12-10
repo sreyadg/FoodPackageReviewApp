@@ -15,22 +15,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/add_new_event"
         android:src="@drawable/add_new_event"
-        android:layout_above="@+id/generate_report"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="41dp"
         android:clickable="true"
-        android:onClick="add_new_event" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/generate_report"
-        android:src="@drawable/generate_report"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/add_new_event"
-        android:layout_marginBottom="180dp"
-        android:clickable="true"
-        android:onClick="generate_report"/>
+        android:onClick="add_new_event"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
     <ImageView
         android:layout_width="wrap_content"

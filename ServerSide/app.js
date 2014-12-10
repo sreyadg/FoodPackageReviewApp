@@ -7,12 +7,16 @@ var bodyParser = require('body-parser');
 
 var mongo = require('mongodb');
 var monk = require('monk');
-var db = monk('...');  //removed for privacy reasons
+var db = monk('mongodb://cz2006:lalala23@ds047020.mongolab.com:47020/lspdata');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var events = require('./routes/events');
 var login = require('./routes/login');
+var reviews = require('./routes/reviews');
+var report = require('./routes/report');
+var auth = require('./routes/auth');
+
 
 var app = express();
 
@@ -37,6 +41,9 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/events', events);
 app.use('/login', login);
+app.use('/reviews', reviews);
+app.use('/auth', auth);
+app.use('/report', report);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -58,6 +65,7 @@ if (app.get('env') === 'development') {
         });
     });
 }
+
 
 // production error handler
 // no stacktraces leaked to user

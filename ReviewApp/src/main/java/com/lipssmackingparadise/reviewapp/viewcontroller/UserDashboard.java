@@ -41,11 +41,18 @@ public class UserDashboard extends Activity implements ServerConnectListener {
     public static final String KEY_PRIVATE_ID = "KEY_PRIVATE_ID";
     private String SharedPreferencesID;
 
+    //SharedPreferences
+    private SharedPreferences NewUserNameLoggedIn;
+    public static final String PREFS_PRIVATE_NEW_USER = "PREFS_PRIVATE_NEW_USER";
+    public static final String KEY_PRIVATE_NEW_USER = "KEY_PRIVATE_NEW_USER";
+    private String SharedPreferencesNewUsername;
+
     // Dialog
     private AlertDialog message_dialog;
 
     //Activity variables
     private String username;
+    private String tempUser;
 
     // NETWORK
     private ServerConnectListener listener;
@@ -80,7 +87,7 @@ public class UserDashboard extends Activity implements ServerConnectListener {
         return super.onOptionsItemSelected(item);
     }
 
-    //TODO implement correct password
+    //TODO implement shared preferences difference btwn newUser and loggedInUser
 
     public void displayUsername() {
 
@@ -128,9 +135,19 @@ public class UserDashboard extends Activity implements ServerConnectListener {
 
         initialise();
 
-        // Get hold of sharedPreferences
-        userNameLoggedIn = getSharedPreferences(Login.PREFS_PRIVATE, Context.MODE_PRIVATE);
-        username = userNameLoggedIn.getString(Login.KEY_PRIVATE, "NA");
+        NewUserNameLoggedIn = getSharedPreferences(SignUp.PREFS_PRIVATE_NEW_USER, Context.MODE_PRIVATE);
+        tempUser = NewUserNameLoggedIn.getString(SignUp.KEY_PRIVATE_NEW_USER, "NA");
+        if (!tempUser.equals("NA")) {
+
+            username = tempUser;
+            NewUserNameLoggedIn.edit().clear().commit();
+        }
+
+        else {
+            // Get hold of sharedPreferences
+            userNameLoggedIn = getSharedPreferences(Login.PREFS_PRIVATE, Context.MODE_PRIVATE);
+            username = userNameLoggedIn.getString(Login.KEY_PRIVATE, "NA");
+        }
 
         if (!username.isEmpty()) {
 
@@ -153,6 +170,10 @@ public class UserDashboard extends Activity implements ServerConnectListener {
 
     public void view_events (View v) {
         startActivity(new Intent(UserDashboard.this, OngoingActivity.class));
+    }
+
+    public void view_journal (View v) {
+        startActivity(new Intent(UserDashboard.this, Journal.class));
     }
 
     private void setMessageDialogAndShow (String text, boolean cancelable) {

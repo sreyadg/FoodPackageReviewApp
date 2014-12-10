@@ -29,7 +29,16 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.content.Context;
 
-import java.io.BufferedInputStream;
+import com.facebook.FacebookException;
+import com.facebook.Session;
+import com.facebook.SessionState;
+import com.facebook.UiLifecycleHelper;
+import com.facebook.widget.LoginButton;
+import com.facebook.widget.WebDialog;
+import com.facebook.widget.WebDialog.OnCompleteListener;
+import java.util.Arrays;
+
+
 
 public class Login extends Activity implements ServerConnectListener{
 
@@ -39,6 +48,10 @@ public class Login extends Activity implements ServerConnectListener{
     private final String MESSAGE_ERROR_UNKNOWN = "Unknown Error!";
     private final String MESSAGE_SUCCESS = "Success!";
     private final String MESSAGE_ERROR_SERVER = "An error occurred while connecting to the server!";
+    private final String MESSAGE_FACEBOOK_SUCCESS = "You are now logged in!";
+
+    private static final String TAG = "MainFragment";
+    private UiLifecycleHelper uiHelper;
 
     // EditTexts
     private AutoCompleteTextView login_username;
@@ -66,10 +79,27 @@ public class Login extends Activity implements ServerConnectListener{
     public static final String KEY_PRIVATE_PASSWORD = "KEY_PRIVATE_PASSWORD";
     private String SharedPreferencesPassword;
 
+    private void onSessionStateChange(Session session, SessionState state, Exception exception) {
+        if (state.isOpened()) {
+            Log.i(TAG, "Logged in...");
+        } else if (state.isClosed()) {
+            Log.i(TAG, "Logged out...");
+        }
+    }
+
+    private Session.StatusCallback callback = new Session.StatusCallback() {
+        @Override
+        public void call(Session session, SessionState state, Exception exception) {
+            onSessionStateChange(session, state, exception);
+        }
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        uiHelper = new UiLifecycleHelper(this, callback);
+        uiHelper.onCreate(savedInstanceState);
         initialise();
     }
 
@@ -178,13 +208,23 @@ public class Login extends Activity implements ServerConnectListener{
         startActivity(new Intent(Login.this, SignUp.class));
     }
 
-    public void Forgot_Page (View v) {
-        startActivity(new Intent(Login.this, ForgotLoginDetails.class));
-    }
 
     public void Sign_In (View v) {
 
         authenticateLoginByUsernameAndPassword ();
+
+    }
+
+    public void facebookLogin (View v) {
+
+        Session session = Session.getActiveSession();
+        if (!session.isOpened() && !session.isClosed()) {
+            session.openForRead(new Session.OpenRequest(this)
+                    .setPermissions(Arrays.asList("public_profile"))
+                    .setCallback(callback));
+        } else {
+            Session.openActiveSession(this, true, callback);
+        }
 
     }
 
@@ -209,5 +249,42 @@ public class Login extends Activity implements ServerConnectListener{
         } else {
             setMessageDialogAndShow (MESSAGE_ERROR_ON_EMPTY_LOGIN_DETAILS, true);
         }
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        Session session = Session.getActiveSession();
+        if (session != null &&
+                (session.isOpened() || session.isClosed()) ) {
+            onSessionStateChange(session, session.getState(), null);
+        }
+
+        uiHelper.onResume();
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        uiHelper.onActivityResult(requestCode, resultCode, data);
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        uiHelper.onPause();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        uiHelper.onDestroy();
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        uiHelper.onSaveInstanceState(outState);
     }
 }

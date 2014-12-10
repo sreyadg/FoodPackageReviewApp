@@ -7,4 +7,4 @@
     <item android:state_selected="true" android:color="@color/wallet_bright_foreground_holo_light"/>
     <item android:color="@color/wallet_bright_foreground_holo_light"/> <!-- not selected -->
 </selector>
-<!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/color/wallet_primary_text_holo_light.xml -->
+<!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/color/wallet_primary_text_holo_light.xml -->

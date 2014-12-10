@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render('index', { title: 'Lips Smacking Paradise Server' });
+  res.render('index', { title: 'Lips Smacking Paradise Review!' });
 });
 
 module.exports = router;

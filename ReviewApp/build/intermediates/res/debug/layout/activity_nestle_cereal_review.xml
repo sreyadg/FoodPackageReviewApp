@@ -11,7 +11,7 @@
     <RatingBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/ratingBar"
+        android:id="@+id/smell"
         android:layout_marginBottom="166dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
@@ -22,12 +22,12 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Taste"
         android:id="@+id/textView"
-        android:layout_above="@+id/ratingBar" />
+        android:layout_above="@+id/smell" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/new_event_banner"
+        android:id="@+id/maggi_new"
         android:src="@drawable/nestle_cereals"
         android:layout_marginBottom="31dp"
         android:layout_above="@+id/textView"
@@ -39,7 +39,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Nestle Cereal"
         android:id="@+id/textView2"
-        android:layout_alignTop="@+id/new_event_banner"
+        android:layout_alignTop="@+id/maggi_new"
         android:layout_alignEnd="@+id/admin_banner"
         android:layout_marginTop="32dp" />
 
@@ -58,16 +58,16 @@
         android:text="Packaging"
         android:id="@+id/textView3"
         android:layout_marginTop="88dp"
-        android:layout_alignTop="@+id/ratingBar"
+        android:layout_alignTop="@+id/smell"
         android:layout_alignParentStart="true" />
 
     <RatingBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/ratingBar2"
+        android:id="@+id/setPackaging"
         android:layout_below="@+id/textView3"
-        android:layout_alignStart="@+id/ratingBar"
+        android:layout_alignStart="@+id/smell"
         android:layout_marginTop="27dp" />
 
 </RelativeLayout>
-<!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/src/main/res/layout/activity_nestle_cereal_review.xml -->
+<!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/src/main/res/layout/activity_nestle_cereal_review.xml -->

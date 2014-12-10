@@ -63,10 +63,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="350dp"
-        android:text="@string/update_personal_details"
+        android:text="Update"
         android:textStyle="bold"
         android:clickable="true"
-        android:contentDescription="@string/update_personal_details"
+        android:contentDescription="Update"
         android:onClick="updateUser"/>
 
 

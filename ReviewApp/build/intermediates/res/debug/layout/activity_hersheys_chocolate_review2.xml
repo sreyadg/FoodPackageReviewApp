@@ -11,7 +11,7 @@
     <RatingBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/ratingBar"
+        android:id="@+id/smell"
         android:layout_marginBottom="166dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
@@ -22,12 +22,12 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Smell"
         android:id="@+id/textView"
-        android:layout_above="@+id/ratingBar" />
+        android:layout_above="@+id/smell" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/new_event_banner"
+        android:id="@+id/maggi_new"
         android:src="@drawable/hershey_s_cookies_n_creme"
         android:layout_marginBottom="31dp"
         android:layout_above="@+id/textView"
@@ -39,7 +39,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Hershey's Cookies 'n' Creme"
         android:id="@+id/textView2"
-        android:layout_above="@+id/new_event_banner"
+        android:layout_above="@+id/maggi_new"
         android:layout_alignParentEnd="true" />
 
     <ImageView
@@ -57,7 +57,7 @@
         android:text="Comments"
         android:id="@+id/textView3"
         android:layout_marginTop="78dp"
-        android:layout_alignTop="@+id/ratingBar"
+        android:layout_alignTop="@+id/smell"
         android:layout_alignParentStart="true" />
 
     <EditText
@@ -66,9 +66,9 @@
         android:id="@+id/editText"
         android:layout_alignParentBottom="true"
         android:layout_alignEnd="@+id/admin_banner"
-        android:layout_alignStart="@+id/ratingBar"
+        android:layout_alignStart="@+id/smell"
         android:layout_below="@+id/textView3" />
 
 </RelativeLayout>
 
-<!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/src/main/res/layout/activity_hersheys_chocolate_review2.xml -->
+<!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/src/main/res/layout/activity_hersheys_chocolate_review2.xml -->

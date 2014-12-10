@@ -25,8 +25,8 @@
     <string name="bizopp_name">Name</string>
     <string name="bizopp_phone">Contact Number</string>
     <string name="bizopp_email">E-mail</string>
-    <string name="bizopp_company">Company</string>
-    <string name="bizopp">Let us contact you!</string>
+    <string name="bizopp_company">Organisation Name</string>
+    <string name="bizopp">Submit</string>
     <string name="title_activity_success_new_user">SuccessNewUser</string>
     <string name="success_new_user">New User successfully created!</string>
     <string name="title_activity_biz_opp">BizOpp</string>
@@ -51,5 +51,13 @@
     <string name="title_activity_admin_access">AdminAccess</string>
     <string name="title_activity_add_new_event">AddNewEvent</string>
     <string name="title_activity_generate_report">GenerateReport</string>
+    <string name="title_activity_maggi_review1">MaggiReview1</string>
+    <string name="title_activity_maggi_review2">MaggiReview2</string>
+    <string name="title_activity_view_maggi_review">ViewMaggiReview</string>
+    <string name="title_activity_maggi_main_page">MaggiMainPage</string>
+    <string name="app_id">338746566297566</string>
+    <string name="title_activity_redirect_facebook">RedirectFacebook</string>
+    <string name="title_activity_journal">Journal</string>
+    <string name="title_activity_success_biz_opp">SuccessBizOpp</string>
 
 </resources>

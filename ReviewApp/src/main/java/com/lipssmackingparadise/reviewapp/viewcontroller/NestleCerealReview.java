@@ -1,12 +1,19 @@
 package com.lipssmackingparadise.reviewapp.viewcontroller;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import com.lipssmackingparadise.reviewapp.R;
+import com.lipssmackingparadise.reviewapp.server.ServerConnectListener;
+import com.lipssmackingparadise.reviewapp.server.ServerConnect;
+import com.lipssmackingparadise.reviewapp.server.ServerUrl;
 
-public class NestleCerealReview extends Activity {
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.view.ViewPager;
+
+public class NestleCerealReview extends FragmentActivity implements ServerConnectListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,4 +40,20 @@ public class NestleCerealReview extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+    @Override
+    public void retrieveCompleted(String result) {
+        // not used
+    }
+
+    @Override
+    public void sendCompleted(String result) {
+       //
+    }
+
+    @Override
+    public void errorOnServerConnect() {
+        //
+    }
+
 }

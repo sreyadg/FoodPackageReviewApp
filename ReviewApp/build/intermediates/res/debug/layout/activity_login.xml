@@ -88,27 +88,21 @@
                 android:onClick="Register_Page"
                 android:contentDescription="@string/register"/>
 
-            <Button
-                android:id="@+id/user_forgot_details_button"
-                style="?android:textAppearanceMedium"
+            <com.facebook.widget.LoginButton
+                android:id="@+id/btnAuth"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/action_forgot_button"
-                android:textStyle="bold"
-                android:clickable="true"
-                android:layout_weight="1"
-                android:onClick="Forgot_Page"
-                android:contentDescription="@string/register"/>
+                android:layout_height="wrap_content" />
 
             <ImageView
                 android:layout_width="75dp"
-                android:layout_height="wrap_content"
+                android:layout_height="75dp"
+                android:layout_marginTop="50dp"
                 android:id="@+id/logo2"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/logo" />
+                android:src="@drawable/logo"
+                android:onClick="facebookLogin"/>
 
 
         </LinearLayout>
     </ScrollView>
 
-</LinearLayout><!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/src/main/res/layout/activity_login.xml -->
+</LinearLayout><!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/src/main/res/layout/activity_login.xml -->

@@ -1,9 +1,11 @@
 package com.lipssmackingparadise.reviewapp.viewcontroller;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import com.lipssmackingparadise.reviewapp.R;
 
 public class BizOpp extends Activity {
@@ -32,5 +34,9 @@ public class BizOpp extends Activity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void newBizOpp (View v) {
+        startActivity(new Intent(BizOpp.this, SuccessBizOpp.class));
     }
 }

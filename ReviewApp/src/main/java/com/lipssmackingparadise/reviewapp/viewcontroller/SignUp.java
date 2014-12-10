@@ -13,7 +13,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.nfc.Tag;
 import android.os.Bundle;
 import android.os.Handler;
@@ -46,6 +48,21 @@ public class SignUp extends Activity implements ServerConnectListener {
     // NETWORK
     private ServerConnectListener listener;
 
+    // Dialog
+    private AlertDialog message_dialog;
+
+    //messages from the server
+    private final String MESSAGE_EXISTING_LOGIN_DETAILS = "Error! Login details already exists.";
+    private final String MESSAGE_ERROR_ADDING = "There was a problem adding the information to the database.";
+    private final String MESSAGE_NEW_USER_SUCCESS = "Added user login details!";
+
+    //SharedPreferences
+    private SharedPreferences NewUserNameLoggedIn;
+    public static final String PREFS_PRIVATE_NEW_USER = "PREFS_PRIVATE_NEW_USER";
+    public static final String KEY_PRIVATE_NEW_USER = "KEY_PRIVATE_NEW_USER";
+    private String SharedPreferencesNewUsername;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -76,6 +93,9 @@ public class SignUp extends Activity implements ServerConnectListener {
         // Initialise ServerConnectListener
         listener = this;
 
+        // Initialise Dialog
+        AlertDialog.Builder builder = new AlertDialog.Builder(SignUp.this);
+        message_dialog = builder.create();
     }
 
     @Override
@@ -85,12 +105,31 @@ public class SignUp extends Activity implements ServerConnectListener {
 
     @Override
     public void sendCompleted(String result) {
-        //to be used
+        if (result.equals(MESSAGE_NEW_USER_SUCCESS)){
+            startActivity(new Intent(SignUp.this, UserDashboard.class));
+        }
+
+        else if (result.equals(MESSAGE_ERROR_ADDING)){
+            setMessageDialogAndShow(MESSAGE_ERROR_ADDING, true);
+        }
+
+        else if (result.equals(MESSAGE_EXISTING_LOGIN_DETAILS)){
+            setMessageDialogAndShow(MESSAGE_EXISTING_LOGIN_DETAILS, true);
+        }
     }
 
     @Override
     public void errorOnServerConnect() {
         //to be used
+    }
+
+    private void setMessageDialogAndShow (String text, boolean cancelable) {
+        if(message_dialog.isShowing()) {
+            message_dialog.dismiss();
+        }
+        message_dialog.setMessage(text);
+        message_dialog.setCancelable(cancelable);
+        message_dialog.show();
     }
 
     public void newUser (View v) throws UnknownHostException {
@@ -122,9 +161,6 @@ public class SignUp extends Activity implements ServerConnectListener {
             }
 
         }
-
-        startActivity(new Intent(SignUp.this, SuccessNewUser.class));
-
     }
 
     private String jsonifyUserData() throws JSONException {
@@ -146,6 +182,12 @@ public class SignUp extends Activity implements ServerConnectListener {
 
         final EditText password1Field = (EditText) findViewById(R.id.new_password);
         String password1 = password1Field.getText().toString();
+
+        SharedPreferencesNewUsername = username;
+        NewUserNameLoggedIn = getSharedPreferences(SignUp.PREFS_PRIVATE_NEW_USER , Context.MODE_PRIVATE);
+        SharedPreferences.Editor privateEdit = NewUserNameLoggedIn.edit();
+        privateEdit.putString(SignUp.KEY_PRIVATE_NEW_USER, SharedPreferencesNewUsername);
+        privateEdit.commit();
 
         JSONObject dataToSend = new JSONObject();
         dataToSend.put("username", username);

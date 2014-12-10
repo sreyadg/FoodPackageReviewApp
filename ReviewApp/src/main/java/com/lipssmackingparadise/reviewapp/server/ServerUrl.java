@@ -5,7 +5,7 @@ package com.lipssmackingparadise.reviewapp.server;
  */
 public class ServerUrl {
 
-    private final String DEFAULT_BASE_URL = "http://192.168.1.11:3000/";
+    private final String DEFAULT_BASE_URL = "http://lsp.nodejitsu.com/";
 
     public String BASE_URL = DEFAULT_BASE_URL;
 
@@ -23,6 +23,11 @@ public class ServerUrl {
 
     public String URL_LOGIN_AUTHENTICATE = BASE_URL + "login/authenticate";
 
+    public String URL_REVIEWS_CREATE = BASE_URL + "reviews/create";
+
+    public String URL_REVIEWS_CREATE_SECOND = BASE_URL + "reviews/create/2";
+
+    public String URL_REVIEWS_VIEW = BASE_URL + "reviews/view";
 
     private static ServerUrl instance;
 

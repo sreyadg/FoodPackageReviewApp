@@ -12,7 +12,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/new_event_banner"
+        android:id="@+id/maggi_new"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:src="@drawable/add_new_event_banner" />
@@ -29,11 +29,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/product_company"
-        android:layout_below="@+id/new_event_banner"
+        android:layout_below="@+id/maggi_new"
         android:layout_marginTop="41dp"
         android:layout_alignParentStart="true"
         android:hint="Company Name"
-        android:layout_alignEnd="@+id/new_event_banner" />
+        android:layout_alignEnd="@+id/maggi_new" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -95,4 +95,4 @@
         android:onClick="create_event"/>
 
 </RelativeLayout>
-<!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/src/main/res/layout/activity_add_new_event.xml -->
+<!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/src/main/res/layout/activity_add_new_event.xml -->

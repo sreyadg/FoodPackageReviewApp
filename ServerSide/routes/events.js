@@ -1,10 +1,6 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
-router.get('/', function(req, res) {
-  res.render('index', { title: 'Express' });
-});
 
 router.post('/create', function(req, res) {
 
@@ -37,5 +33,26 @@ router.post('/create', function(req, res) {
 		}
 	});
 });
+
+router.post('/', function(req, res) {
+
+	var eventType = req.body,eventType;
+
+
+	// Set our internal DB variable
+	var db = req.db;
+
+	// Set our collection
+	var collection = db.get(eventType);
+
+	collection.find({},{fields: {"product_name":0, "product_description":0, "event_start":0, "event_end":0, "_id":0}},function(e,docs){
+    res.send(docs);
+    });
+    
+});
+
+
+
+
 
 module.exports = router;

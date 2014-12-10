@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
     <eat-comment />
 
     <attr name="actionBarDivider" format="reference" />
@@ -78,7 +78,21 @@
     <color name="abc_search_url_text_normal">#7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
     <color name="abc_search_url_text_selected">@android:color/black</color>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/common_colors.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/build/intermediates/exploded-aar/com.facebook.android/facebook/3.20.0/res/values/values.xml -->
+    <eat-comment />
+
+    <color name="com_facebook_blue">#3B5998</color>
+    <color name="com_facebook_likeboxcountview_border_color">#6a7180</color>
+    <color name="com_facebook_likeboxcountview_text_color">#6a7180</color>
+    <color name="com_facebook_likebutton_text_color">#FFFFFF</color>
+    <color name="com_facebook_likeview_text_color">#6a7180</color>
+    <color name="com_facebook_loginview_text_color">#FFFFFF</color>
+    <color name="com_facebook_picker_search_bar_background">#f5f5f7</color>
+    <color name="com_facebook_picker_search_bar_text">#bcbdc2</color>
+    <color name="com_facebook_usersettingsfragment_connected_shadow_color">#000000</color>
+    <color name="com_facebook_usersettingsfragment_connected_text_color">#FFFFFF</color>
+    <color name="com_facebook_usersettingsfragment_not_connected_text_color">#A6AED7</color>
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/common_colors.xml -->
     <eat-comment />
 
     <color name="common_action_bar_splitter">#d2d2d2</color>
@@ -91,7 +105,7 @@
     <color name="common_signin_btn_light_text_disabled">#FFAAAAAA</color>
     <color name="common_signin_btn_light_text_focused">#FF737373</color>
     <color name="common_signin_btn_light_text_pressed">@android:color/white</color>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/wallet_colors.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/wallet_colors.xml -->
     <eat-comment />
 
     <color name="wallet_bright_foreground_disabled_holo_light">#ffb2b2b2</color>
@@ -107,7 +121,7 @@
     <color name="wallet_hint_foreground_holo_light">#808080</color>
     <color name="wallet_holo_blue_light">#ff33b5e5</color>
     <color name="wallet_link_text_light">#0000ee</color>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
     <eat-comment />
 
     <declare-styleable name="ActionBar">
@@ -235,7 +249,7 @@
         -->
         <attr name="expandActivityOverflowButtonDrawable" format="reference" />
     </declare-styleable>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/admob_ads_attrs.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/admob_ads_attrs.xml -->
     <eat-comment />
 
     <declare-styleable name="AdsAttrs">
@@ -257,7 +271,7 @@
         <!-- The ad unit ID. -->
         <attr name="adUnitId" format="string" />
     </declare-styleable>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
     <eat-comment />
 
     <declare-styleable name="CompatTextView">
@@ -279,7 +293,7 @@
         <!-- Size of padding on either end of a divider. -->
         <attr name="dividerPadding" format="dimension" />
     </declare-styleable>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/maps_attrs.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/maps_attrs.xml -->
     <eat-comment />
 
     <declare-styleable name="MapAttrs">
@@ -304,7 +318,7 @@
         <attr name="useViewLifecycle" format="boolean" />
         <attr name="zOrderOnTop" format="boolean" />
     </declare-styleable>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
     <eat-comment />
 
     <declare-styleable name="MenuGroup">
@@ -574,7 +588,7 @@
         -->
         <attr name="android:focusable" />
     </declare-styleable>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/wallet_attrs.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/wallet_attrs.xml -->
     <eat-comment />
 
     <declare-styleable name="WalletFragmentOptions">
@@ -648,7 +662,69 @@
             <enum name="monochrome" value="2" />
         </attr>
     </declare-styleable>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/build/intermediates/exploded-aar/com.facebook.android/facebook/3.20.0/res/values/values.xml -->
+    <eat-comment />
+
+    <declare-styleable name="com_facebook_friend_picker_fragment">
+        <attr name="multi_select" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="com_facebook_like_view">
+        <attr name="foreground_color" format="color" />
+        <attr name="object_id" format="string" />
+        <attr name="style">
+
+            <!-- Keep in sync with Enums in LikeView -->
+            <enum name="standard" value="0" />
+            <enum name="button" value="1" />
+            <enum name="box_count" value="2" />
+        </attr>
+        <attr name="auxiliary_view_position">
+
+            <!-- Keep in sync with Enums in LikeView -->
+            <enum name="bottom" value="0" />
+            <enum name="inline" value="1" />
+            <enum name="top" value="2" />
+        </attr>
+        <attr name="horizontal_alignment">
+
+            <!-- Keep in sync with Enums in LikeView -->
+            <enum name="center" value="0" />
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="com_facebook_login_view">
+        <attr name="confirm_logout" format="boolean" />
+        <attr name="fetch_user_info" format="boolean" />
+        <attr name="login_text" format="string" />
+        <attr name="logout_text" format="string" />
+    </declare-styleable>
+    <declare-styleable name="com_facebook_picker_fragment">
+        <attr name="show_pictures" format="boolean" />
+        <attr name="extra_fields" format="string" />
+        <attr name="show_title_bar" format="boolean" />
+        <attr name="title_text" format="string" />
+        <attr name="done_button_text" format="string" />
+        <attr name="title_bar_background" format="reference" />
+        <attr name="done_button_background" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="com_facebook_place_picker_fragment">
+        <attr name="radius_in_meters" format="integer" />
+        <attr name="results_limit" format="integer" />
+        <attr name="search_text" format="string" />
+        <attr name="show_search_box" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="com_facebook_profile_picture_view">
+        <attr name="preset_size">
+
+            <!-- Keep in sync with constants in ProfilePictureView -->
+            <enum name="small" value="-2" />
+            <enum name="normal" value="-3" />
+            <enum name="large" value="-4" />
+        </attr>
+        <attr name="is_cropped" format="boolean" />
+    </declare-styleable>
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
     <eat-comment />
 
     <dimen name="abc_action_bar_default_height">48dip</dimen>
@@ -668,18 +744,56 @@
     <dimen name="abc_panel_menu_list_width">296dp</dimen>
     <dimen name="abc_search_view_preferred_width">320dip</dimen>
     <dimen name="abc_search_view_text_min_width">160dip</dimen>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/src/main/res/values/dimens.xml -->
     <eat-comment />
 
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/build/intermediates/exploded-aar/com.facebook.android/facebook/3.20.0/res/values/values.xml -->
+    <eat-comment />
+
+    <dimen name="com_facebook_likeboxcountview_border_radius">3dp</dimen>
+    <dimen name="com_facebook_likeboxcountview_border_width">1dp</dimen>
+    <dimen name="com_facebook_likeboxcountview_caret_height">3dp</dimen>
+    <dimen name="com_facebook_likeboxcountview_caret_width">6dp</dimen>
+    <dimen name="com_facebook_likeboxcountview_text_padding">6dp</dimen>
+    <dimen name="com_facebook_likeboxcountview_text_size">11.0sp</dimen>
+    <dimen name="com_facebook_likebutton_compound_drawable_padding">8dp</dimen>
+    <dimen name="com_facebook_likebutton_padding_bottom">0dp</dimen>
+    <dimen name="com_facebook_likebutton_padding_left">8dp</dimen>
+    <dimen name="com_facebook_likebutton_padding_right">8dp</dimen>
+    <dimen name="com_facebook_likebutton_padding_top">0dp</dimen>
+    <dimen name="com_facebook_likebutton_text_size">13.0sp</dimen>
+    <dimen name="com_facebook_likeview_edge_padding">2dp</dimen>
+    <dimen name="com_facebook_likeview_internal_padding">6dp</dimen>
+    <dimen name="com_facebook_likeview_text_size">11.0sp</dimen>
+    <dimen name="com_facebook_loginview_compound_drawable_padding">12dp</dimen>
+    <dimen name="com_facebook_loginview_padding_bottom">12dp</dimen>
+    <dimen name="com_facebook_loginview_padding_left">12dip</dimen>
+    <dimen name="com_facebook_loginview_padding_right">16dp</dimen>
+    <dimen name="com_facebook_loginview_padding_top">12dp</dimen>
+    <dimen name="com_facebook_loginview_text_size">16.0sp</dimen>
+    <dimen name="com_facebook_picker_place_image_size">64dp</dimen>
+    <dimen name="com_facebook_profilepictureview_preset_size_large">180dp</dimen>
+    <dimen name="com_facebook_profilepictureview_preset_size_normal">100dp</dimen>
+    <dimen name="com_facebook_profilepictureview_preset_size_small">50dp</dimen>
+    <dimen name="com_facebook_tooltip_horizontal_padding">10dp</dimen>
+    <dimen name="com_facebook_usersettingsfragment_profile_picture_height">64dp</dimen>
+    <dimen name="com_facebook_usersettingsfragment_profile_picture_width">64dp</dimen>
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
     <eat-comment />
 
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
     <item name="dialog_fixed_height_minor" type="dimen">100%</item>
     <item name="dialog_fixed_width_major" type="dimen">320dp</item>
     <item name="dialog_fixed_width_minor" type="dimen">320dp</item>
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/build/intermediates/exploded-aar/com.facebook.android/facebook/3.20.0/res/values/values.xml -->
+    <eat-comment />
+
+    <drawable name="com_facebook_picker_default_separator_color">#33464c59</drawable>
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
+    <eat-comment />
+
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
@@ -688,15 +802,15 @@
     <item name="progress_horizontal" type="id"/>
 
     <integer name="abc_max_action_buttons">2</integer>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/version.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/version.xml -->
     <eat-comment />
 
     <integer name="google_play_services_version">6111000</integer>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
     <string name="LSP">Food Packaging Review App!</string>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
     <eat-comment />
 
     <string name="abc_action_bar_home_description">Navigate home</string>
@@ -712,41 +826,74 @@
     <string name="abc_searchview_description_voice">Voice search</string>
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/admob_strings.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/admob_strings.xml -->
     <eat-comment />
 
     <string name="accept">Accept</string>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
     <string name="action_current">View Current Events</string>
     <string name="action_forgot_button">Forgot Username/Password?</string>
     <string name="action_forgot_login_details">Get Login Details</string>
     <string name="action_past">View Past Events</string>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/src/main/res/values/strings_activity_login.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/src/main/res/values/strings_activity_login.xml -->
     <eat-comment />
 
     <string name="action_register">Register</string>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
     <string name="action_settings">Settings</string>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/src/main/res/values/strings_activity_login.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/src/main/res/values/strings_activity_login.xml -->
     <eat-comment />
 
     <string name="action_sign_in">Sign in</string>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
     <string name="action_sign_up">Create Account</string>
     <string name="action_upcoming">View Upcoming Events</string>
+    <string name="app_id">338746566297566</string>
     <string name="app_name">Review App</string>
-    <string name="bizopp">Let us contact you!</string>
-    <string name="bizopp_company">Company</string>
+    <string name="bizopp">Submit</string>
+    <string name="bizopp_company">Organisation Name</string>
     <string name="bizopp_email">E-mail</string>
     <string name="bizopp_name">Name</string>
     <string name="bizopp_phone">Contact Number</string>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/common_strings.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/build/intermediates/exploded-aar/com.facebook.android/facebook/3.20.0/res/values/values.xml -->
+    <eat-comment />
+
+    <string name="com_facebook_choose_friends">Choose Friends</string>
+    <string name="com_facebook_dialogloginactivity_ok_button">OK</string>
+    <string name="com_facebook_image_download_unknown_error">Unexpected error while downloading an image.</string>
+    <string name="com_facebook_internet_permission_error_message">WebView login requires INTERNET permission</string>
+    <string name="com_facebook_internet_permission_error_title">AndroidManifest Error</string>
+    <string name="com_facebook_like_button_liked">Liked</string>
+    <string name="com_facebook_like_button_not_liked">Like</string>
+    <string name="com_facebook_loading">Loading...</string>
+    <string name="com_facebook_loginview_cancel_action">Cancel</string>
+    <string name="com_facebook_loginview_log_in_button">Log in with Facebook</string>
+    <string name="com_facebook_loginview_log_out_action">Log out</string>
+    <string name="com_facebook_loginview_log_out_button">Log out</string>
+    <string name="com_facebook_loginview_logged_in_as">Logged in as: %1$s</string>
+    <string name="com_facebook_loginview_logged_in_using_facebook">Logged in using Facebook</string>
+    <string name="com_facebook_logo_content_description">Facebook Logo</string>
+    <string name="com_facebook_nearby">Nearby</string>
+    <string name="com_facebook_picker_done_button_text">Done</string>
+    <string name="com_facebook_placepicker_subtitle_catetory_only_format">%1$s</string>
+    <string name="com_facebook_placepicker_subtitle_format">%1$s • %2$,d were here</string>
+    <string name="com_facebook_placepicker_subtitle_were_here_only_format">%1$,d were here</string>
+    <string name="com_facebook_requesterror_password_changed">Your Facebook password has changed. Please log into this app again to reconnect your Facebook account.</string>
+    <string name="com_facebook_requesterror_permissions">This app doesn’t have permission to do this. To change permissions, try logging into the app again.</string>
+    <string name="com_facebook_requesterror_reconnect">Please log into this app again to reconnect your Facebook account.</string>
+    <string name="com_facebook_requesterror_relogin">Please log into this app again to reconnect your Facebook account.</string>
+    <string name="com_facebook_requesterror_web_login">Your Facebook account is locked. Please log into www.facebook.com to continue.</string>
+    <string name="com_facebook_tooltip_default">New! You\'re in control - choose what info you want to share with apps.</string>
+    <string name="com_facebook_usersettingsfragment_log_in_button">Log in…</string>
+    <string name="com_facebook_usersettingsfragment_logged_in">Logged in</string>
+    <string name="com_facebook_usersettingsfragment_not_logged_in">Not logged in</string>
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/common_strings.xml -->
     <eat-comment />
 
     <string name="common_android_wear_notification_needs_update_text">An application requires an update to the Android Wear app.</string>
@@ -777,20 +924,20 @@
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/admob_strings.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/admob_strings.xml -->
     <eat-comment />
 
     <string name="create_calendar_message">Allow Ad to create a calendar event?</string>
     <string name="create_calendar_title">Create calendar event</string>
     <string name="decline">Decline</string>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/src/main/res/values/strings_activity_login.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/src/main/res/values/strings_activity_login.xml -->
     <eat-comment />
 
     <string name="error_field_required">This field is required</string>
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_invalid_email">This username is invalid</string>
     <string name="error_invalid_password">This password is too short</string>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
     <string name="f_l_d">Enter your e-mail id</string>
@@ -802,22 +949,22 @@
     <string name="new_user">Enter a Username of your choice</string>
     <string name="nfn">First Name</string>
     <string name="nln">Last Name</string>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/src/main/res/values/strings_activity_login.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/src/main/res/values/strings_activity_login.xml -->
     <eat-comment />
 
     <string name="prompt_password">Password</string>
     <string name="prompt_username">Username</string>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
     <string name="register">Register</string>
     <string name="retype_p">Retype Password</string>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/admob_strings.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/admob_strings.xml -->
     <eat-comment />
 
     <string name="store_picture_message">"Allow Ad to store image in Picture gallery?"</string>
     <string name="store_picture_title">Save image</string>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
     <string name="success_new_user">New User successfully created!</string>
@@ -830,13 +977,17 @@
     <string name="title_activity_hersheys">Hersheys</string>
     <string name="title_activity_hersheys_chocolate_review">HersheysChocolateReview</string>
     <string name="title_activity_hersheys_chocolate_review2">HersheysChocolateReview2</string>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/src/main/res/values/strings_activity_login.xml -->
+    <string name="title_activity_journal">Journal</string>
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/src/main/res/values/strings_activity_login.xml -->
     <eat-comment />
 
     <string name="title_activity_login">Sign in</string>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
+    <string name="title_activity_maggi_main_page">MaggiMainPage</string>
+    <string name="title_activity_maggi_review1">MaggiReview1</string>
+    <string name="title_activity_maggi_review2">MaggiReview2</string>
     <string name="title_activity_nestle">Nestle</string>
     <string name="title_activity_nestle_cereal_review">NestleCerealReview</string>
     <string name="title_activity_nestle_cereal_review2">NestleCerealReview2</string>
@@ -844,25 +995,28 @@
     <string name="title_activity_ongoing">OngoingActivity</string>
     <string name="title_activity_ongoing_event">OngoingEvent</string>
     <string name="title_activity_past">PastActivity</string>
+    <string name="title_activity_redirect_facebook">RedirectFacebook</string>
     <string name="title_activity_sign_up">SignUp</string>
+    <string name="title_activity_success_biz_opp">SuccessBizOpp</string>
     <string name="title_activity_success_new_user">SuccessNewUser</string>
     <string name="title_activity_upcoming">UpcomingActivity</string>
     <string name="title_activity_update_details">UpdateDetails</string>
     <string name="title_activity_update_personal_details">UpdatePersonalDetails</string>
     <string name="title_activity_update_username_password">UpdateUsernamePassword</string>
     <string name="title_activity_user_dashboard">UserDashboard</string>
+    <string name="title_activity_view_maggi_review">ViewMaggiReview</string>
     <string name="update_personal_details">Update Personal Details!</string>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/wallet_strings.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/wallet_strings.xml -->
     <eat-comment />
 
     <string name="wallet_buy_button_place_holder" translation_description="Text on a button that allows a user to make a payment with Google Wallet [CHAR LIMIT=30]">Buy with Google</string>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/src/main/res/values/styles.xml -->
     <eat-comment />
 
     <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
         <!-- Customize your theme here. -->
     </style>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
     <eat-comment />
 
     <style name="TextAppearance.AppCompat.Base.CompactMenu.Dialog" parent="android:TextAppearance.Medium">
@@ -1284,7 +1438,7 @@
     <style name="Theme.Base.AppCompat.Light.DialogWhenLarge" parent="Theme.Base.AppCompat.Light" />
 
     <style name="Theme.Base.Light" parent="android:Theme.Light" />
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/admob_iap_style.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/admob_iap_style.xml -->
     <eat-comment />
 
     <style name="Theme.IAPTheme" parent="android:Theme">
@@ -1295,7 +1449,7 @@
         <item name="android:windowIsFloating">true</item>
         <item name="android:backgroundDimEnabled">false</item>
     </style>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/wallet_styles.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/res/values/wallet_styles.xml -->
     <eat-comment />
 
     <style name="WalletFragmentDefaultButtonTextAppearance">
@@ -1333,7 +1487,7 @@
         <item name="maskedWalletDetailsLogoTextColor">@color/wallet_bright_foreground_holo_dark</item>
         <item name="maskedWalletDetailsLogoImageType">classic</item>
     </style>
-    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
     <eat-comment />
 
     <style name="Widget.AppCompat.ActionBar" parent="Widget.AppCompat.Base.ActionBar" />
@@ -1627,5 +1781,37 @@
     <style name="Widget.AppCompat.ProgressBar.Horizontal" parent="Widget.AppCompat.Base.ProgressBar.Horizontal" />
 
     <style name="Widget.AppCompat.Spinner.DropDown.ActionBar" parent="Widget.AppCompat.Base.Spinner" />
+    <!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/build/intermediates/exploded-aar/com.facebook.android/facebook/3.20.0/res/values/values.xml -->
+    <eat-comment />
+
+    <style name="com_facebook_loginview_default_style" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/com_facebook_button_blue</item>
+        <item name="android:textColor">@color/com_facebook_loginview_text_color</item>
+        <item name="android:textSize">@dimen/com_facebook_loginview_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">@dimen/com_facebook_loginview_padding_left</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="com_facebook_loginview_silver_style" parent="@android:style/Widget.Button">
+        <item name="android:width">205dp</item>
+        <item name="android:height">44dp</item>
+        <item name="android:background">@drawable/com_facebook_loginbutton_silver</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#4B5164</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="tooltip_bubble_text">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">0.25</item>
+        <item name="android:shadowColor">#40000000</item>
+    </style>
 
 </resources>

@@ -41,9 +41,5 @@ public class AdminAccess extends Activity {
         startActivity(new Intent(AdminAccess.this, AddNewEvent.class));
     }
 
-    public void generate_report (View v) {
-        startActivity(new Intent(AdminAccess.this, GenerateReport.class));
-    }
-
 
 }

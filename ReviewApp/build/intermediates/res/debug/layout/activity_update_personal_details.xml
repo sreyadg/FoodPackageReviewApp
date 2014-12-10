@@ -63,12 +63,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="350dp"
-        android:text="@string/update_personal_details"
+        android:text="Update"
         android:textStyle="bold"
         android:clickable="true"
-        android:contentDescription="@string/update_personal_details"
+        android:contentDescription="Update"
         android:onClick="updateUser"/>
 
 
 
-</RelativeLayout><!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp/app/src/main/res/layout/activity_update_personal_details.xml -->
+</RelativeLayout><!-- From: file:/C:/Users/User/Documents/CZ2006/ReviewApp2/app/src/main/res/layout/activity_update_personal_details.xml -->

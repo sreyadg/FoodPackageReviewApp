@@ -48,32 +48,40 @@ router.post('/create', function(req, res) {
 
 	// Set our collection
 	var collection = db.get('users');
-
-
-	//salt password
-	bcrypt.genSalt(10, function(err, salt) {
-		bcrypt.hash(password, null, null, function(err, hash) {
-			collection.insert({
-				"username" : username,
-				"first_name" : first_name,
-				"last_name" : last_name,
-				"email" : email,
-				"dob" : dob,
-				"password" : hash
-			}, function (err, doc) {
-				if (err) {
-					console.log("There was a problem adding the information to the database.");
-				}
-				else {          
-					console.log('Added user login details!');
-				}
+ 
+	collection.find( { $or: [ { "username": username }, { "email" : email } ] }, {}, function(err, doc) {  //check if user or email exists in the databse
+		
+		if (doc.length == 0){
+			bcrypt.genSalt(10, function(err, salt) {        //salt password
+				bcrypt.hash(password, null, null, function(err, hash) {
+					collection.insert({
+						"username" : username,
+						"first_name" : first_name,
+						"last_name" : last_name,
+						"email" : email,
+						"dob" : dob,
+						"password" : hash
+					}, function (err, doc) {
+						if (err) {
+							res.send("There was a problem adding the information to the database.");
+						}
+						else {          
+							res.send('Added user login details!');
+						}
+					});
+				});
 			});
-		});
-	});  
+		}
+
+		else {
+			  res.send("Error! Login details already exists.")
+		}
+	
+	});
 });
 
 router.post('/update', function(req, res) {
-  
+   
   var _id = req.body._id;
   var first_name = req.body.first_name;
   var last_name = req.body.last_name;
@@ -120,7 +128,6 @@ router.post('/update', function(req, res) {
 
 
   }
-
    
 });
  
