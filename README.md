@@ -1,4 +1,4 @@
 FoodPackageReviewApp
 =========
 
-App to manage food package reviews
+Android app with a NodeJS server to manage food packaging reviews, supported by a MongoDB database.
